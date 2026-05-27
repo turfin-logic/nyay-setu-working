@@ -145,7 +145,7 @@ const DocumentGeneratePage = () => {
 
     const cardStyle = {
         background: 'var(--bg-surface)',
-        border: '1px solid var(--color-border)',
+        border: '1px solid var(--border-light)',
         borderRadius: '1rem',
         padding: '1.5rem',
     };
@@ -158,7 +158,7 @@ const DocumentGeneratePage = () => {
         fontSize: '0.9rem',
         outline: 'none',
         transition: 'border-color 0.2s',
-        background: 'var(--bg-elevated)',
+        background: 'var(--bg-input)',
         fontFamily: 'inherit',
     };
 
@@ -206,7 +206,7 @@ const DocumentGeneratePage = () => {
             <header style={{
                 padding: '1rem 1.5rem',
                 background: 'var(--bg-surface)',
-                borderBottom: '1px solid var(--color-border)',
+                borderBottom: '1px solid var(--border-light)',
                 display: 'flex',
                 alignItems: 'center',
                 gap: '1rem',
@@ -230,7 +230,7 @@ const DocumentGeneratePage = () => {
                             width: s === step ? '2rem' : '0.5rem',
                             height: '0.5rem',
                             borderRadius: '0.25rem',
-                            background: s <= step ? 'var(--color-primary)' : '#E5E7EB',
+                            background: s <= step ? 'var(--color-primary)' : 'var(--border-light)',
                             transition: 'all 0.3s',
                         }} />
                     ))}
@@ -523,7 +523,7 @@ const DocumentGeneratePage = () => {
                                         fontFamily: '"Courier New", Courier, monospace',
                                         fontSize: '0.88rem',
                                         lineHeight: 1.6,
-                                        background: 'var(--bg-elevated)',
+                                        background: 'var(--bg-input)',
                                         resize: 'vertical',
                                         color: 'var(--text-main)',
                                     }}
